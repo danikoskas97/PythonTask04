@@ -1,8 +1,6 @@
-import datetime
-import person
+from person import Person
 
-
-class Lecturer:
+class Lecturer(Person):
     def __init__(self):
         super().__init__(self,)
 

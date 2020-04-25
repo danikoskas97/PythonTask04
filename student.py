@@ -1,5 +1,4 @@
 import datetime
-
 from person import Person
 
 
@@ -10,5 +9,4 @@ class Student(Person):
 
 
 yoad = Student("yoad", "gadot", 1233, "tlv","python", datetime.date(2014, 3, 21))
-
-print(yoad)
+print(yoad);

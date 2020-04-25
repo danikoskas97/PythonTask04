@@ -1,10 +1,8 @@
 import datetime
-import Person
+from person import Person
 
-
-class Employee:
-    def __init__(self, firstName: str, lastName: str, id: str, adress,
-                 baseSalary: int, seniority: int):
-        super(Employee, self).__init__()
+class Employee(Person):
+    def __init__(self, baseSalary: int, seniority: int):
+        super().__init__(name=firstName)
         self.__baseSalary = baseSalary
         self.__seniority = seniority

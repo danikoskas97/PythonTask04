@@ -1,6 +1,5 @@
 import datetime
 
-
 class Person:
 
     def __init__(self, firstName: str, lastName: str, id: int, adress: str):
