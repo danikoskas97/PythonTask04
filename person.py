@@ -17,10 +17,10 @@ class Person:
     def set_name(self, firstName):
         self.__name = firstName
 
-    def get_lastName(self):
+    def get_last_name(self):
         return self.__lastName
 
-    def set_lastName(self, lastName):
+    def set_last_name(self, lastName):
         self.__lastName = lastName
 
     def get_id(self):

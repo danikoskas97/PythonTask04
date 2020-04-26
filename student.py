@@ -8,16 +8,16 @@ class Student(Person):
         self.__courses = courses
         self.__year = year
 
-    def getCourses(self):
+    def get_courses(self):
         return self.__courses
 
-    def setCourses(self, courses):
+    def set_courses(self, courses):
         self.__courses = courses
 
-    def getYear(self):
+    def get_year(self):
         return self.__year
 
-    def setYear(self, year):
+    def set_year(self, year):
         self.__year = year
 
 
