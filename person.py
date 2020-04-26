@@ -36,7 +36,7 @@ class Person:
         self.__adress = adress
 
 
-student1 = Student("yoad", "gadot", 1233, "Tel-aviv",("Python","Java"),2020)
-sudent2 = Student("Dani","Koskas",2313,"Raanana",("Python","advanced algo"),2020)
-lecturer1 = Lecturer("gab","rich",43600, "eilat",("Python","advanced algo"),2020)
+student1 = Student("yoad", "gadot", 1233, "Tel-aviv", ("Python", "Java"), 2020)
+sudent2 = Student("Dani","Koskas",2313,"Raanana", ("Python", "advanced algorithme"), 2020)
+lecturer1 = Lecturer("gab","rich",43600, "eilat", ("Python", "advanced algorithme"), 2020)
 
