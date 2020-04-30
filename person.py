@@ -2,8 +2,9 @@ import datetime
 from lecturer import Lecturer
 from student import Student
 
-class Person:
 
+class Person:
+    
     def __init__(self, firstName: str, lastName: str, id: int, adress: str, year: datetime.date):
         self.__name = firstName
         self.__lastName = lastName
@@ -32,11 +33,5 @@ class Person:
     def get_adress(self):
         return self.__adress
 
-    def set_adress(self,adress):
+    def set_adress(self, adress):
         self.__adress = adress
-
-
-student1 = Student("yoad", "gadot", 1233, "Tel-aviv", ("Python", "Java"), 2020)
-sudent2 = Student("Dani","Koskas",2313,"Raanana", ("Python", "advanced algorithme"), 2020)
-lecturer1 = Lecturer("gab","rich",43600, "eilat", ("Python", "advanced algorithme"), 2020)
-
