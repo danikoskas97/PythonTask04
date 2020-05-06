@@ -20,6 +20,18 @@ class Student(Person):
     def set_year(self, year):
         self.__year = year
 
+    def take_courses(self):
+        ret = ''
+        for course in self.__courses:
+            ret += course + ', '
+        print(f'{str(self)}\n course in year {self.__year}:\n')
+
+    # def takes_courses_from(self, lecturer: frozenset) -> str:
+
+
+
+
+
 
 
 
