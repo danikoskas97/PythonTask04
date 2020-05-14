@@ -9,7 +9,7 @@ class Person:
         self.adress = adress
         self.telephone = telephone
         self.email = email
-        today = date.today() # question 3
+        today = date.today()  # question 3
         self.age = today.year - self.birthdate.year - ((today.month, today.day) < (self.birthdate.month,
                                                                                    self.birthdate.day))
 
@@ -31,7 +31,6 @@ class Person:
     @property
     def birthdate(self):
         return self.__birthdate
-
 
     @birthdate.setter
     def birthdate(self, birthdate):
