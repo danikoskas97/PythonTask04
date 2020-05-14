@@ -20,3 +20,23 @@ def calculate_age(self):
     self.age = today.year - self.birthdate.year - ((today.month, today.day) < (self.birthdate.month,
                                                                                self.birthdate.day))
     return self.age
+
+
+# question 2
+def check_who_teaches(teacher: Lecturer, s: Student):
+    try:
+        for i in teacher.teaches_courses:
+            for j in s.courses:
+                if i == j:
+                    print(f'{teacher.fname} teaches {i}')
+                    print(f'{s.fname} studies {i}')
+    except TypeError:
+        print("only recieves a lecturer and a student, please try again")
+    except:
+        print("bad input, try again")
+
+
+check_who_teaches(lecturer1, student1)
+
+# question 3
+print(student1.age)
