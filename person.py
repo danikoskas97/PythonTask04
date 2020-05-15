@@ -9,7 +9,7 @@ class Person:
         self.adress = adress
         self.telephone = telephone
         self.email = email
-        today = date.today()  # question 3
+        today = date.today()  # Q.3
         self.age = today.year - self.birthdate.year - ((today.month, today.day) < (self.birthdate.month,
                                                                                    self.birthdate.day))
 
@@ -18,7 +18,7 @@ class Person:
                f'-----' \
                f' שם משפחתי הוא: {self.last_name}' \
                f'-----' \
-               f' אני גרה ב{self.adress}'
+               f' אני גר/גרה ב{self.adress}'
 
     @property
     def first_name(self):

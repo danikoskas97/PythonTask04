@@ -1,5 +1,4 @@
 from datetime import date
-
 from student import Student
 from lecturer import Lecturer
 
@@ -14,15 +13,7 @@ lecturer1 = Lecturer("James", 'Bond', '1970,7,09', 'Ariel', '012-000007', 'james
                      , '200', ['python'])
 
 
-# question 3 - the ability to update age after creation
-def calculate_age(self):
-    today = date.today()
-    self.age = today.year - self.birthdate.year - ((today.month, today.day) < (self.birthdate.month,
-                                                                               self.birthdate.day))
-    return self.age
-
-
-# question 2
+# Q.2
 def check_who_teaches(teacher: Lecturer, s: Student):
     try:
         for i in teacher.teaches_courses:
@@ -38,5 +29,13 @@ def check_who_teaches(teacher: Lecturer, s: Student):
 
 check_who_teaches(lecturer1, student1)
 
-# question 3
+
+# Q.3 update age after creation
+def calculate_age(self):
+    today = date.today()
+    self.age = today.year - self.birthdate.year - ((today.month, today.day) < (self.birthdate.month,
+                                                                               self.birthdate.day))
+    return self.age
+
+
 print(student1.age)
